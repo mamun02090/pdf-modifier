@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 50px;
+  border: 1px dashed gray;
+  max-width: 500px;
+  background: lightgray;
+  gap: 30px;
+}
+button {
+  background: orange;
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: aliceblue;
+  cursor: pointer;
+}
