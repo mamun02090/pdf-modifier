@@ -16,7 +16,7 @@ body {
   margin: auto;
   padding: 50px;
   border: 1px dashed gray;
-  max-width: 500px;
+  max-width: 900px;
   background: lightgray;
   gap: 30px;
 }
@@ -28,4 +28,56 @@ button {
   font-weight: bold;
   color: aliceblue;
   cursor: pointer;
+}
+#pdf {
+  width: 700px;
+  height: 700px;
+}
+.pdf-viewer {
+  width: 100%;
+}
+.action {
+  display: flex;
+  align-self: flex-end;
+  gap: 10px;
+}
+#download {
+  display: none;
+  background: green;
+}
+
+@media (max-width: 768px) {
+  #pdf {
+    width: 600px;
+    height: 700px;
+  }
+}
+@media (max-width: 600px) {
+  #pdf {
+    width: 500px;
+    height: 600px;
+  }
+}
+@media (max-width: 500px) {
+  #pdf {
+    width: 400px;
+    height: 600px;
+  }
+  .action {
+    flex-direction: column;
+    align-items: center;
+    align-self: unset;
+  }
+}
+@media (max-width: 400px) {
+  #pdf {
+    width: 350px;
+    height: 600px;
+  }
+}
+@media (max-width: 350px) {
+  #pdf {
+    width: 300px;
+    height: 600px;
+  }
 }

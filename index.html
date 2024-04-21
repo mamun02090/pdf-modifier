@@ -11,7 +11,15 @@
   <body>
     <div class="container">
       <h1>Get Your Income Tax Return Form</h1>
-      <button onclick="modifyPdf()">Download</button>
+      <div class="pdf-viewer">
+        <iframe id="pdf" src="./f1120h.pdf"></iframe>
+      </div>
+      <div class="action">
+        <button onclick="modifyPdf()">Fill with Sample Data</button>
+        <!-- <button id="download" onclick="downloadPDF()">
+          Download PDF (Sample Data)
+        </button> -->
+      </div>
     </div>
   </body>
   <script type="text/javascript" src="./script.js"></script>
